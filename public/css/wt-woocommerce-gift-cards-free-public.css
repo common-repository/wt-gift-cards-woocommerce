@@ -1,0 +1,9 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.wt_gc_checkout_store_credit_balance{ display:block; background-color:#fafafa; padding:1.41575em; box-sizing:border-box; margin-bottom:2.617924em; }
+.wt_gc_checkout_store_credit_balance input{ margin-right:10px; }
+.wt_gc_discounted_gift_card_flag_html{ display:inline-block; border:solid 1px #ec4c4c; color:#ec4c4c; border-radius:3px; padding:2px 10px; margin:5px 2px 10px 2px; }
+.wt_sc_credit_history{ display:none; }

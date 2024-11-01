@@ -1,0 +1,10 @@
+<wpml-config>
+  <admin-texts>
+    <key name="wt-woocommerce-gift-cards_gift_card">
+      <key name="fields_to_be_shown">
+        <key name="3"/>
+        <key name="4"/>
+      </key>
+    </key>
+  </admin-texts>
+</wpml-config>

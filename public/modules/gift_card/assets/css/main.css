@@ -1,0 +1,76 @@
+.wt_gc_gift_card_product_page_wrapper, .wt_gc_gift_card_product_page_templates_wrapper{ width:100%; height:auto; color:#000; font-weight:normal; }
+.wt_gc_gift_card_product_page_wrapper *{ box-sizing:border-box; }
+.wt_gc_gift_card_product_page_title{ margin-bottom:30px; }
+.wt_gc_gift_card_product_page_wrapper h2{ font-size:18px; width:100%; color:#666666; font-weight:600; padding-bottom:0px; margin-bottom:0px;}
+.wt_gc_gift_card_product_page_wrapper h3{ font-size:16px; width:100%; color:#000; font-weight:600;}
+
+
+.wt_gc_gift_card_product_page_bottom{ display:flex; width:100%; gap:2%; flex-direction:row; flex-wrap:wrap; padding-top:30px; }
+.wt_gc_gift_card_product_page_preview_wrapper{flex:1; flex-basis:350px;}
+.wt_gc_gift_card_product_page_form{ flex:1 1 300px; width:100%; }
+.wt_gc_gift_card_product_page_form form{ flex-wrap:wrap; }
+.wt_gc_gift_card_product_page_form form .quantity{ display:none; }
+
+
+.wt_gc_gift_card_product_page_templates_container{ width:100%; margin-bottom:5px; padding-top:25px; }
+
+.wt_gc_gift_card_product_page_templates{ width:100%; padding-top:0px; }
+.wt_gc_gift_card_product_page_templates_inner div{ flex-basis:33.33%; display:flex; align-items:center; cursor:pointer; border:2px solid transparent; padding:3px; border-radius:5px; box-sizing:border-box; }
+.wt_gc_gift_card_product_page_templates_inner div.active{ border:solid 2px #848587; }
+
+
+@media (max-width: 800px) {
+	.wt_gc_gift_card_product_page_preview_wrapper, .wt_gc_gift_card_product_page_form{ flex:100%; width:100%; }
+	.wt_gc_gift_card_product_page_form{ padding-bottom:40px; }
+}
+
+.wt_gc_email_preview{ width:100%; float:left; padding:5px; line-height:20px; font-size:14px; display:none; margin-bottom:40px; }
+.wt_gc_email_wrapper{ box-shadow: 2px 2px 5px 2px #ccc; border-radius:10px; padding-top:10px; }
+.wt_gc_email_wrapper_inner{ padding:0px 30px; }
+.wt_gc_email_message{ width:100%; height:auto; border-left:solid 5px #DEDEDE; font-style:italic; margin-top:25px; padding:5px 15px; }
+.wt_gc_email_preview .wt_gc_email_bottom table, .wt_gc_email_preview .wt_gc_email_bottom table tr{ border:none; }
+.wt_gc_email_preview .wt_gc_email_bottom table td{ padding:0px; border:none; }
+.wt_gc_email_preview .wt_gift_coupon_additional_content, .wt_gc_email_preview .wt_gc_email_top, .wt_gc_email_preview .wt_gift_coupon_custom_additional_content{ display:none; }
+.wt_gc_email_product_last{ padding-bottom:10px; border-radius:0px 0px 10px 10px; }
+
+.wt_gc_gift_card_product_page_form_hd{ display: none; margin-top:40px; }
+.wt_gc_gift_card_product_page_form_wrapper{ width:100%; }
+.wt_gc_gift_card_product_page_form_item{ float:left; width:100%; padding:3px 0px; margin-bottom:5px; clear:both; }
+.wt_gc_gift_card_product_page_form_item .wt_gc_gift_card_field{float:left; width:99%; box-shadow:none; margin-left:0px; background:#fff; border:1px solid #666666; border-radius:4px; font-size:14px;}
+.wt_gc_gift_card_product_page_form_item input.wt_gc_gift_card_field{height:35px; padding:5px; margin-top:0px; box-sizing:border-box;}
+.wt_gc_gift_card_product_page_form_item .wt_gc_gift_card_field:focus{background:#fff;}
+.wt_gc_gift_card_product_page_form_item .wt_gc_gift_card_field::placeholder{ font-size:14px;}
+.wt_gc_gift_card_product_page_form_item .wt_gc_gift_card_field[readonly]{background:#f6f6f6;}
+.wt_gc_gift_card_product_page_form_item .wt_gc_gift_card_field[readonly]:focus{background:#f6f6f6; outline:none;}
+.wt_gc_gift_card_product_page_form_item .wt_gc_credit_instruction{ float:left; font-size:11px; width:100%; line-height:14px; color:#aaa; margin-top:2px; position:absolute; left:0px; top:36px; }
+.wt_gc_gift_card_product_page_form label{ color:#666; font-size:14px; font-weight:500; }
+.wt_gc_disable_text_selection{ -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none; }
+
+.wt_gc_product_page_form_discounted_gift_card_info_text{ display:none; width:100%; margin:10px 0px 5px 0px; font-size:14px; color:#333; font-weight:normal; }
+
+.wt_gc_credit_denominations{ float:left; margin-left:0px; }
+.wt_gc_credit_denominations .denominaton_label{ float:left; margin:0px 5px 5px 0px; border:solid 2px #e4dada; border-radius:5px; padding:4px 12px; cursor:pointer; font-size:14px; box-sizing:border-box; background:#fff; height:35px;}
+.wt_gc_credit_denominations input[type="radio"]{ opacity:0; width:0 !important; position:absolute;}
+.wt_gc_credit_denominations .denominaton_label.wt_gc_selected_amount, .wt_gc_gift_card_custom_price .wt_gc_gift_card_field.wt_gc_selected_amount{ border:2px solid #0576FE; color:#000; }
+.wt_gc_credit_amount_label{ float: left; width: 100%;}
+.wt_gc_credit_denomination{ float:left; margin-bottom: 23px; height:35px; }
+
+.wt_gc_carousal{ width:100%; position:relative; padding:0px 25px; box-sizing:border-box; }
+.wt_gc_carousal_inner{ display:flex; flex-flow:row nowrap; width:100%; overflow-x:auto; overflow-y:hidden; scrollbar-width:none; }
+.wt_gc_carousal_inner::-webkit-scrollbar{ display:none; }
+.wt_gc_carousal_item{ flex-grow:0; flex-shrink:0; }
+.wt_gc_carousal_item img{ max-width:100%; }
+.wt_gc_carousal_nav_arrows{ position:absolute; width:20px; height:calc(100% - 10px); top:0px; bottom:0px; margin-top:5px; font-size:12px; text-align:center; color:#fff; cursor:pointer; background:#9da1a4;}
+.wt_gc_carousal_nav_arrows span{ position:absolute; height:32px; line-height:32px; width:20px; top:50%; left:0px; margin-top:-16px; color:#fff; }
+.wt_gc_carousal_nav_arrows_left{ left:0px; border-radius: 4px 0px 0px 4px; }
+.wt_gc_carousal_nav_arrows_right{ right:0px; border-radius: 0px 4px 4px 0px; }
+.wt_gc_gift_card_product_page_categories .wt_gc_carousal_nav_arrows{ margin-top:0px; height:100%;}
+.wt_gc_carousal_nav_arrows.disabled{ opacity:.4; cursor:not-allowed; }
+.wt_gc_carousal_nav_arrows:not(.disabled):hover{ background:#32373E; color:#fff; }
+
+@media (max-width:500px) {
+	.wt_gc_gift_card_product_page_templates_inner div{ flex-basis:50%; }
+}
+
+.woocommerce-page .wt_gc_gift_card_product_page_wrapper label{ margin-bottom: unset;}
+.single-product .wt_gc_gift_card_product_page_wrapper form input[type=number] { width: 100px; padding: 5px;}

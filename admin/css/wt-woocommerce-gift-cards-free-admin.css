@@ -1,0 +1,150 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.wt_gc_text_right{ text-align:right; }
+.wt_gc_text_center{ text-align:center; }
+
+/* pagination */
+.wt_gc_pagination{ float:right; width:auto; height:auto; margin:10px 0px;}
+.wt_gc_pagination a{ float:left; padding:6px 12px; background:#f3f5f6; border:solid 1px #cccccc; color:#2e8ab6; text-decoration:none; margin-right:5px; border-radius:5px; }
+.wt_gc_pagination a.wt_gc_pageactive{ background:#fff; color:#333; border:solid 1px #ddd; }
+.wt_gc_pagination a.wt_gc_pagedisabled{ background:#f7f7f7; color:#a0a5aa; border:solid 1px #ddd; }
+.wt_gc_pagination a.wt_gc_page{ cursor:pointer; }
+.wt_gc_pagination_total_info{ float:left; padding:8px; }
+
+/* popup */
+.wt_gc_cst_overlay{ position:fixed; z-index:1000009; width:100%; height:100%; background-color:rgba(0,0,0,.5); left:0px; top:0px; display:none;}
+.wt_gc_popup{position:fixed; z-index:1000010; background:#fff; border:solid 1px #eee; text-align:center; box-shadow:0px 2px 5px #333; left:50%; transform:translate(-50%, 0%); display:none;}
+.wt_gc_popup_hd{display:inline-block; width:100%; box-sizing:border-box; font-weight:bold; height:50px; text-align:left; line-height:50px; padding:0px 20px;}
+.wt_gc_popup_title{ float:left; }
+.wt_gc_popup_close{float:right; width:20px; height:20px; border-radius:10px; text-align:center; line-height:20px; cursor:pointer; background:#000; color:#fff; margin-top:15px;}
+.wt_gc_popup_body{ padding:20px; }
+.wt_gc_popup_footer{width:100%; text-align:right; margin-top:10px;}
+
+.wt-gc-tab-head{ margin-right:0px; margin-top:20px; clear:both; width:73%;}
+.wt-gc-tab-container{ padding:15px; padding-bottom:0px; background:#fff; box-shadow:0px 2px 2px #ccc; float:left; box-sizing:border-box; width:73%; height:auto;}
+.wt-gc-tab-right-container{ float:left; width:calc(27% - 25px); margin-left:25px; margin-top:-1px; }
+.wt-gc-tab-head .nav-tab{ border-top-left-radius:3px; border-top-right-radius:3px; }
+.wt-gc-tab-head .nav-tab-active{ background: #fff; border-bottom: solid 1px #fff; }
+.wt-gc-tab-head .nav-tab:focus{ box-shadow:none;}
+.wt-gc-tab-content{ float:left; width:100%; height:auto; padding-bottom:15px;}
+.wt_gc_sub_tab_container{float:left; width:100%; height:auto;}
+.wt_gc_sub_tab{ display:inline-block; margin:0px;}
+.wt_gc_sub_tab li{ display:inline-block; border-left: solid 1px #ccc; padding:3px 10px; cursor: pointer;}
+.wt_gc_sub_tab li:first-child{ border-left:none; padding-left:0px; }
+.wt_gc_sub_tab_content{ float:left; width:100%; height:auto; }
+.wt_gc_sub_tab_trigger{ cursor:pointer; }
+.wt_gc_notify_msg{ position:fixed; width:350px; padding:15px; font-weight:bold; font-size:12px; right:60px; top:0px; opacity:0; border-radius:5px; z-index:1000000000; text-shadow:0px 1px 1px #fff; line-height:22px;}
+.wt_gc_notify_msg_error{ background:#ffdbdb; color:#90534e; border:solid 1px #dfc5c6; }
+.wt_gc_notify_msg_success{ background:#e1ffdb; color:#75936f; border:solid 1px #cfecce; }
+.wt_gc_notify_msg_progress{ background:#d1ecf1; color:#0c5460; border:solid 1px #bee5eb;; }
+.wt_gc_notify_msg_progress .spinner{ visibility:visible; float:left; margin-top:1px; }
+.wt-gc-tab-content .button{ border-color:#e5e5e5; }
+.wt-gc-tab-content .button-primary{ border:none; }
+.wt-gc-tab-content .button-secondary{ border-color:#e5e5e5; color:#666; }
+.wt-gc-tab-content .button-secondary:hover{ border-color:#e5e5e5; color:#333; }
+.wt-gc-tab-content .button:hover{ border-color:#e5e5e5; }
+.wt-gc-tab-content input[type="text"], .wt-gc-tab-content input[type="number"], .wt_gc_text_field{ border-color:#e5e5e5; }
+
+@media (max-width:1200px) {
+	.wt-gc-tab-head, .wt-gc-tab-container, .wt-gc-tab-right-container{ width:65%; }
+	.wt-gc-tab-right-container{ width:calc(35% - 30px); }
+}
+
+@media (max-width:990px) {
+	.wt-gc-tab-head, .wt-gc-tab-container, .wt-gc-tab-right-container{ width:60%; }
+	.wt-gc-tab-right-container{ width:calc(40% - 30px); }
+}
+
+@media (max-width:768px) {
+	.wt-gc-tab-head, .wt-gc-tab-container, .wt-gc-tab-right-container{ width:100%; }
+	.wt-gc-tab-right-container{ margin:auto; margin-top:30px; }
+}
+
+
+/* form */
+.wt-gc-form-table{ width:100%; }
+.wt-gc-help-links li{float:left;padding:40px;margin:20px;text-align:center;box-shadow:1px 1px 5px 1px rgba(0,0,0,.1);width:185px;height:245px}
+
+/* input fields */
+.wt-gc-form-table input[type="text"], .wt-gc-form-table input[type="number"], .wt-gc-form-table select{ display: block; width:100%; padding: 0.35rem 0.75rem; font-size:.85rem; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: 0.25rem; transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; height:36px; max-width:none; }
+.wt-gc-form-table input[type="text"]::placeholder, .wt-gc-form-table input[type="number"]::placeholder{ color:#cfd2d5; }
+.wt-gc-form-table select{ padding: 0.44rem 0.75rem; }
+.wt-gc-form-table .select2-selection,.wt-gc-form-table .select2-selection.select2-selection--multiple,.wt-gc-form-table textarea{display:block;width:100%;color:#495057;background-color:#fff;background-clip:padding-box;transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out}
+.wt-gc-form-table textarea{padding:.375rem .75rem;font-size:.85rem;line-height:1.5;border:1px solid #ced4da;border-radius:.25rem}
+.wt_gc_checkbox_list_item, .wt_gc_radio_list_item{ display:inline-block; padding-bottom:10px; padding-right:10px; }
+.wt-gc-form-table input.wt_gc_number_field[type="number"], .wt_gc_number_field{ max-width:100px; display:inline-block; }
+
+/* multi select */
+.wt-gc-form-table .select2-selection[aria-expanded="false"],.wt-gc-form-table .select2-selection.select2-selection--multiple[aria-expanded="false"], .toplevel_page_wt-woocommerce-gift-cards .select2-container .select2-selection--multiple[aria-expanded="false"]{border:1px solid #ced4da !important; border-radius:.25rem; min-height:60px; font-size:.75rem}
+.wt-gc-form-table .select2-selection.select2-selection--single{ min-height:38px; border:1px solid #ced4da; }
+.wt-gc-form-table .select2-container { width:100% !important; }
+.wt-gc-form-table .select2-selection--single .select2-selection__rendered{ line-height:34px !important; font-size:.85rem; }
+.wt-gc-form-table .select2-container .select2-selection--single .select2-selection__arrow{ height:36px; }
+.wt_gc_select_multi{ width:100%; }
+.wt_gc_select_multi .select2-container{ width:100% !important; }
+
+
+.wt_gc_settings_form .button { padding:0.3rem 0.75rem; height: auto; }
+.wt_gc_button{ height:36px !important; }
+.wt-gc-form-table .button { padding:0.3rem 0.75rem; height: auto; }
+.wt-gc-form-group{width:100%;}
+.wt-gc-form-group .button{height:32px;}
+.wt_gc_form_help{ color:#666; font-style: italic; font-weight:400; font-size:12px; display:inline-block; width:100%; margin-top:5px; }
+.wt_gc_form_help img{ display:inline-block; max-width:100%; box-shadow:0px 2px 2px 0px #ccc; padding:1px; background:#fff;}
+.wt_gc_required_field{ display:inline-block; color:red; margin-left:3px; }
+.wt_gc_color_picker_field{ width:80px; height:30px; border:solid 1px #e5e5e5; border-radius:3px; }
+.wt-gc-form-table .wt_gc_custom_and_preset{width:70%; float:left; }
+.wt-gc-form-table .wt_gc_custom_and_preset_text{width:25% !important; float:right; }
+.wt-gc-form-table tr th:first-child{ width:35%; text-align:start; padding:13px 10px 15px 0; font-size:14px; vertical-align:top; font-weight:normal; }
+.wt-gc-form-table tr td:nth-child(2){ width:40%; padding:13px 10px 15px 0; vertical-align:top; }
+.wt-gc-form-table tr td:nth-child(3){ width:25%; }
+.wt-gc-form-table tr th:first-child label{ display:inline-block; margin-top:0px; font-weight:500; color:#32373E; cursor:default; }
+.form_field_html_label{ padding-top:0px; display:inline-block; }
+.wt-gc-form-settings-group-heading{ border-bottom:dashed 1px #ccc; padding-bottom:5px; }
+.wt_gc_badge { display:inline-block; padding:2px 6px; font-size:12px; border-radius:3px; background:#ccc; color:#fff; text-align:center; }
+.wt_gc_input_adjacent{ display:inline-block; height:30px; line-height:30px; padding-left:5px; }
+
+/* field group */
+.wt-gc-form-table .wt_gc_field_group{ padding-left:0px; }
+.wt-gc-form-table .wt_gc_field_group_hd{ display:block; border-bottom:dashed 1px #ccc; padding-bottom:5px; padding-top:20px; font-size:16px; font-weight:600; cursor:pointer; }
+.wt-gc-form-table .wt_gc_field_group_hd .wt_gc_field_group_toggle_btn{float:left; margin-right:10px; width:20px; height:20px; border-radius:10px; color:#666; cursor:pointer; }
+.wt-gc-form-table .wt_gc_field_group_description{ float:left; padding-left:5px 10px; width:100%; }
+.wt-gc-form-table .wt_gc_field_group_content{ display:none; }
+.wt-gc-form-table .wt_gc_field_group_content table{ width:100%; }
+
+/* settings bottom toolbar */
+.wt-gc-plugin-toolbar{ float:left; height:auto; width:100%; margin:0; padding:0}
+.wt-gc-plugin-toolbar .left{ float:left; margin:0; padding:0}
+.wt-gc-plugin-toolbar .left img{ vertical-align:text-bottom; margin-right:10px}
+.wt-gc-plugin-toolbar .right{ float:right; margin:0 10px 0 0; padding:0}
+.wt-gc-plugin-toolbar.bottom{ margin-top:12px; background:#f5f5f5; border-top:1px solid #ddd; margin-left:-15px; margin-right:-15px; margin-bottom:0;padding:9px 15px}
+.wt-gc-plugin-toolbar.top{ margin-top:-15px; background:#f5f5f5; border-bottom:1px solid #ddd;border-top:1px solid #ddd;margin-left:-15px;margin-right:-15px; margin-bottom:15px; padding:15px}
+.wt-gc-plugin-toolbar.top h3{ margin:5px 0px;}
+.wt-gc-plugin-toolbar.bottom .button{ padding:0.2rem 0.75rem; height:auto;}
+
+/* messages */
+.wt_gc_msgs{ padding:10px; border-radius:5px; }
+.wt_gc_msg_wrn{ background:#fef8e7; border:solid 1px #ffdc60; color:#3b3a36; font-size:13px; }
+
+.wt_gc_upgrade_pro{ box-shadow:0px 2px 2px #ccc; float:left; border-radius:11px;background: #fff; }
+.wt_gc_upgrade_pro_main{ float:left; width:93%; height:auto; padding:25px 17px; text-align:center; box-sizing:border-box; background: #F4F8FF; border-radius: 11px 11px 0px 0px; display: flex; gap: 10px; margin: 12px;}
+.wt_gc_upgrade_pro_main_hd{ font-weight:600; font-size:16px; line-height:26px; color:#000000; text-align: left;}
+.wt_gc_upgrade_pro_content{ float:left; width: 100%; padding:0px 18px 50px 18px; box-sizing:border-box;}
+.wt_gc_upgrade_pro_content_head{ text-align:left; font-size:17px; font-weight:700; padding-left:13px; margin:0; color: #4750CB;}
+.wt_gc_upgrade_pro .pro_feature_list{ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; font-size: 13px; line-height: 1.4em; padding:0px 3px;}
+.wt_gc_upgrade_pro .pro_feature_list li { margin-bottom: 15px; padding-left:25px; color:#000; }
+.wt_gc_upgrade_pro .pro_feature_list li .dashicons{ background:#fff; color:#6ABE45; border-radius:20px; margin-right:5px; margin-left:-25px; }
+.wt_gc_upgrade_pro .wt-gc-pro-features-all-features{display:none;}
+.wt_gc_upgrade_pro .wt-gc-pro-features-all-features .wt-gc-pro-features-all-features-bullet li::before{ content: "\2022"; color: #2270B1; font-weight: bold; display: inline-block; width: 1em; margin-left: -1em; font-size: 18px;}
+.wt_gc_upgrade_pro_button{ text-align: center; position: absolute; bottom: 97%; left: 0px; right: 0px;}
+.wt_gc_upgrade_pro_button a.button{ background:#0263D5; font-size:15px; font-weight:500; line-height:58px; width:calc(100% - 44px); color:#fff; border:none;}
+.wt_gc_upgrade_pro_button a.button:hover, .wt_gc_upgrade_pro_button a.button:active, .wt_gc_upgrade_pro_button a.button:focus{ background:#2630B0; color:#fff; }
+
+.wt_gc_upgrade_pro_lower_green{float:left; width:100%; padding:15px 28px 26px 32px; box-sizing:border-box; position: relative; min-height: 243px;}
+.wt_gc_upgrade_pro_half_box{ float:left; width:49%; box-sizing:border-box; font-style:normal; font-weight:normal; font-size:12px; font-weight:500; line-height:14px; color:#000000; }
+.wt_gc_upgrade_pro_icon_box{ float:left; width:21px; height:auto; margin-top:7px; border-radius:20px 20px 20px 20px; background:#fff; margin-right:5px; box-sizing:border-box; padding:4px; }
+.wt_gc_upgrade_pro_icon_info_box{ float:left; width:calc(100% - 41px); margin-top:4px; text-align:left; }
+.wt_gc_extras_content{  background: #EFEDFF54; float: left; padding: 1px 12px; display: flex; width: 97%; margin-left: -4%; border: 1px solid #E4E4E4;}
+.wt_gc_extras_content h3{  line-height: 22px; margin-left: 25px; font-size: 14px;}
